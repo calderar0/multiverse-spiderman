@@ -1,4 +1,7 @@
 @import url('../css/reset.css');
+@import url('../css/global.css');
+@import url('components/navigator.css');
+@import url('components/pills.css');
 
 .wrapper {
     display: flex;
@@ -17,11 +20,50 @@
     left: 0;
     top: 0;
     z-index: 1;
-  }
+}
   
 .wrapper .main-content{
     height: 100%;
     width: 100%;
     padding-left: 130px;
     position: relative;
-  }
+    background-color: gray;
+}
+
+  .wrapper .s-main-content__top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+  
+.wrapper .main-content__bottom{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrapper .main-content .logo img{
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+}
+
+
+.wrapper .main-content__top .description{
+    background-color: rgba(0,0,0,.7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+  
+.wrapper .main-content__top .description .description__text p{
+    color: white;
+    line-height: 170%;
+}
+  
+.wrapper .main-content__top .description .pills{
+    margin-bottom: 20px;
+}
+  
