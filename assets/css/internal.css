@@ -4,12 +4,19 @@
 @import url('components/pills.css');
 @import url('components/link-button.css');
 @import url('components/gallery.css');
+@import url('components/backgrounds.css');
 
 .wrapper {
     display: flex;
     height: 100vh;
     flex-flow: row nowrap; 
 }
+
+.wrapper video{
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+  }
 
 .wrapper .left-column {
     width: 100px;
@@ -29,7 +36,6 @@
     width: 100%;
     padding-left: 130px;
     position: relative;
-    background-color: gray;
 }
 
   .wrapper .main-content__top {
@@ -44,6 +50,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+.wrapper .main-content__bottom img{
+    width: 15rem;
 }
 
 .wrapper .main-content .logo img{
@@ -76,4 +86,3 @@
     display: flex;
     flex-direction: row;
 }
-  
